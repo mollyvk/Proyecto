@@ -5,14 +5,18 @@ En este repositorio se encuentra el proyecto de fin de ciclo de Pablo Fernández
 ## Screenshots
 Estas son algunas imágenes de la interfaz de la aplicación.
 
-![Pantalla de login](https://raw.githubusercontent.com/mollyvk/Proyecto/master//img/_readme/1_login.png)
+![Imagen de login](https://raw.githubusercontent.com/mollyvk/Proyecto/master//img/_readme/1_login.png)
 
-![Menú](https://raw.githubusercontent.com/mollyvk/Proyecto/master//img/_readme/2_menu.png)
+![Imagen de menú](https://raw.githubusercontent.com/mollyvk/Proyecto/master//img/_readme/2_menu.png)
 
-![Revisión de la auditoría de una ubicación](https://raw.githubusercontent.com/mollyvk/Proyecto/master//img/_readme/3_ubicacion.png)
+![Imagen de revisión de la auditoría de una ubicación](https://raw.githubusercontent.com/mollyvk/Proyecto/master//img/_readme/3_ubicacion.png)
 
-![Muestra de diferencias entre lo auditado y el teórico](https://raw.githubusercontent.com/mollyvk/Proyecto/master//img/_readme/4_diferencias.png)
+![Imagen de diferencias entre lo auditado y el teórico](https://raw.githubusercontent.com/mollyvk/Proyecto/master//img/_readme/4_diferencias.png)
 
-## Manual de instalación y uso
-Documento explicativo en la memoria del proyecto
+## Librerías y tecnologías empleadas
+Todas las librerías necesarias se encuentran en la capeta lib salvo las dependencias de JavaFX que deben estar instaladas en el sistema. 
+- Java 8.
+- JavaFx con Scene builder.
+- JFoenix
+- SQLite
 
