@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #718792;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InventarioPrincipalController">
+   <children>
+      <AnchorPane prefHeight="110.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="61.0" layoutY="33.0" text="Inventario" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="44.0" fitWidth="40.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/almacen.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="515.0" prefWidth="242.0" style="-fx-background-color: #ff5722; -fx-background-radius: 25;" AnchorPane.bottomAnchor="-25.0" AnchorPane.leftAnchor="-25.0" AnchorPane.topAnchor="110.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="btnConteo" onMouseClicked="#cambiarVentana" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/qr-scan-3.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="88.0" layoutY="29.0" text="Conteo" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnUbicaciones" onMouseClicked="#cambiarVentana" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="56.0" layoutX="23.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/portapapeles.png" />
+                           </image>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </ImageView>
+                        <Label layoutX="89.0" layoutY="29.0" text="Ubicaciones" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnCargarBase" onMouseClicked="#cambiarVentana" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/database-3.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="89.0" layoutY="29.0" text="Cargar base" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnStockTeorico" onMouseClicked="#cambiarVentana" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/quantity-2.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="89.0" layoutY="29.0" text="Stock teórico" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnDiferencias" onMouseClicked="#cambiarVentana" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="56.0" layoutX="22.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/ic_scores.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="89.0" layoutY="29.0" text="Diferencias" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnResultado" onMouseClicked="#cambiarVentana" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="24.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/ic_analysis.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="89.0" layoutY="29.0" text="Resultado" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneProyector" layoutX="225.0" layoutY="15.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="900.0" style="-fx-background-color: #ff5722;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutY="30.0" prefHeight="141.0" prefWidth="354.0">
+               <children>
+                  <ImageView fitHeight="146.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/ic_library_add_check.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="141.0" layoutY="18.0" style="-fx-label-padding: 15px;" text="Auditorías" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="141.0" layoutY="81.0" style="-fx-label-padding: 15px;" text="Control de stock" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="121.0" layoutY="262.0" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #718792;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" layoutX="210.0" layoutY="100.0" prefHeight="200.0" prefWidth="480.0">
+               <children>
+                  <AnchorPane fx:id="btn_abrir_inventario" onMouseClicked="#abrirInventario" prefHeight="316.0" prefWidth="200.0" style="-fx-background-color: #455a64; -fx-background-radius: 15px;">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="14.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/almacen.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="39.0" layoutY="164.0" text="Hacer inventario" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btn_gestionarArchivos" disable="true" onMouseClicked="#gestionarArchivos" prefHeight="316.0" prefWidth="200.0" style="-fx-background-color: #455a64; -fx-background-radius: 15px;">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="14.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/carpeta.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="30.0" layoutY="164.0" text="Gestionar archivos" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

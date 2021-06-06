@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="450.0" style="-fx-background-color: #1c313a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="75.0" style="-fx-label-padding: 15px;" text="Auditorías" textAlignment="CENTER" textFill="#ff5722">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="399.0" text="Descripción de la aplicación " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="208.0" fitWidth="206.0" layoutX="122.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/ic_library_add_check.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #718792;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="181.0" layoutY="195.0" text="Login" textFill="#1c313a">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="tf_usuario" focusColor="#ff5722" labelFloat="true" layoutX="86.0" layoutY="265.0" onKeyPressed="#handleEnterPressed" prefWidth="278.0" promptText="USUARIO" unFocusColor="#1c313a">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txt_password" focusColor="#ff5722" labelFloat="true" layoutX="86.0" layoutY="349.0" onKeyPressed="#handleEnterPressed" prefWidth="278.0" promptText="PASSWORD" unFocusColor="#1c313a">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <Pane layoutX="184.0" layoutY="436.0" prefHeight="62.0" prefWidth="78.0" style="-fx-background-color: #ff5722; -fx-background-radius: 15px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">
+               <children>
+                  <ImageView fx:id="btn_entrar" accessibleRole="BUTTON" fitHeight="62.0" fitWidth="70.0" onMouseClicked="#entrar" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.2" scaleZ="1.2" translateX="9.0">
+                     <image>
+                        <Image url="@../../img/ic_input.png" />
+                     </image>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
